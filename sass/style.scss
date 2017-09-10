@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+}
+// Top Line //
+#header {
+  background-color: #534d64;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+// Date Section & Form Section //
+#main-section, #addLine {
+  text-align: center;
+  background-color: #66727d;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 20px;
+  button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+  }
+  button.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    margin-left: 5px;
+  }
+
+  button.accordion.active:after {
+    content: "\2212";
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    color: #000;
+    form {
+      padding: 5px;
+      label {
+        margin-top: 15px;
+        float: left;
+        font-size: 15px;
+      }
+      input[type=text], textarea, select {
+        background-color: #d8f5ee;
+        border-color: #a5e8d6;
+      }
+      input::placeholder {
+        color: #000;
+      }
+      input[type=submit] {
+        background-color: #f08377;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        outline: none;
+        font-weight: bold;
+        width: 90px;
+        font-size: 15px;
+        margin-top: -20px;
+      }
+      input[type=checkbox] {
+        margin-right: 5px;
+      }
+      input:focus::placeholder,
+      textarea:focus,
+      input[type="text"]:focus,
+      .uneditable-input:focus {
+        border-color: #a5e8d6;
+        outline: 0 none;
+        color: #000;
+      }
+    }
+  }
+}
+// Data Section //
+#main-collumns {
+  background-color: #f5f5f5;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+// Timetabe //
+#timetable {
+  background-color: #f5f5f5;
+  table, td, th {
+    text-align: center;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold;
+    button {
+      font-size: 15px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+    .panel {
+      background-color: white;
+      display: none;
+      color: #000;
+      form {
+        padding: 5px;
+        label {
+          margin-top: 15px;
+          float: left;
+          font-size: 15px;
+        }
+        input[type=text], textarea, select {
+          background-color: #d8f5ee;
+          border-color: #a5e8d6;
+        }
+        input::placeholder {
+          color: #000;
+        }
+        input[type=submit] {
+          background-color: #f08377;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          outline: none;
+          font-weight: bold;
+          width: 90px;
+          font-size: 15px;
+          margin-top: -17px;
+        }
+        input[type=checkbox] {
+          margin-right: 5px;
+        }
+        input:focus::placeholder,
+        textarea:focus,
+        input[type="text"]:focus,
+        .uneditable-input:focus {
+          border-color: #a5e8d6;
+          outline: 0 none;
+          color: #000;
+        }
+      }
+    }
+  }
+  th, td {
+    padding: 15px;
+    font-size: 15px;
+  }
+  .event-one {
+    background-color: #a5e8d6;
+  }
+  .event-two {
+    background-color: #d8f5ee;
+  }
+  .event-three {
+    background-color: lightgreen;
+  }
+  .event-four {
+    background-color: lightblue;
+  }
+}
+// Responsive Design //
+@media screen and (max-width: 320px){
+  #main-section {
+    p {
+      font-size: 16px;
+      margin-left: 30px;
+    }
+  }
+  #main-collumns {
+    p {
+      font-size: 12px;
+    }
+  }
+  #timetable {
+    .panel {
+      form {
+        .form-group {
+          label {
+            font-size: 14px;
+          }
+          input[type=submit] {
+            width: 70px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

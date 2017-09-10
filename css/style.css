@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+#header {
+  background-color: #534d64;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+#main-section, #addLine {
+  text-align: center;
+  background-color: #66727d;
+  color: #fff;
+  font-weight: bold;
+  padding-top: 10px;
+  font-size: 20px; }
+  #main-section button, #addLine button {
+    background-color: inherit;
+    border: none;
+    outline: none; }
+  #main-section button.accordion:after, #addLine button.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    font-size: 30px;
+    margin-left: 5px; }
+  #main-section button.accordion.active:after, #addLine button.accordion.active:after {
+    content: "\2212"; }
+  #main-section .panel, #addLine .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    color: #000; }
+    #main-section .panel form, #addLine .panel form {
+      padding: 5px; }
+      #main-section .panel form label, #addLine .panel form label {
+        margin-top: 15px;
+        float: left;
+        font-size: 15px; }
+      #main-section .panel form input[type=text], #main-section .panel form textarea, #main-section .panel form select, #addLine .panel form input[type=text], #addLine .panel form textarea, #addLine .panel form select {
+        background-color: #d8f5ee;
+        border-color: #a5e8d6; }
+      #main-section .panel form input::placeholder, #addLine .panel form input::placeholder {
+        color: #000; }
+      #main-section .panel form input[type=submit], #addLine .panel form input[type=submit] {
+        background-color: #f08377;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        outline: none;
+        font-weight: bold;
+        width: 90px;
+        font-size: 15px;
+        margin-top: -20px; }
+      #main-section .panel form input[type=checkbox], #addLine .panel form input[type=checkbox] {
+        margin-right: 5px; }
+      #main-section .panel form input:focus::placeholder,
+      #main-section .panel form textarea:focus,
+      #main-section .panel form input[type="text"]:focus,
+      #main-section .panel form .uneditable-input:focus, #addLine .panel form input:focus::placeholder,
+      #addLine .panel form textarea:focus,
+      #addLine .panel form input[type="text"]:focus,
+      #addLine .panel form .uneditable-input:focus {
+        border-color: #a5e8d6;
+        outline: 0 none;
+        color: #000; }
+
+#main-collumns {
+  background-color: #f5f5f5;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 15px; }
+
+#timetable {
+  background-color: #f5f5f5; }
+  #timetable table, #timetable td, #timetable th {
+    text-align: center; }
+  #timetable table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: bold; }
+    #timetable table button {
+      font-size: 15px;
+      background-color: transparent;
+      border: none;
+      outline: none; }
+    #timetable table .panel {
+      background-color: white;
+      display: none;
+      color: #000; }
+      #timetable table .panel form {
+        padding: 5px; }
+        #timetable table .panel form label {
+          margin-top: 15px;
+          float: left;
+          font-size: 15px; }
+        #timetable table .panel form input[type=text], #timetable table .panel form textarea, #timetable table .panel form select {
+          background-color: #d8f5ee;
+          border-color: #a5e8d6; }
+        #timetable table .panel form input::placeholder {
+          color: #000; }
+        #timetable table .panel form input[type=submit] {
+          background-color: #f08377;
+          border: none;
+          border-radius: 5px;
+          color: #fff;
+          outline: none;
+          font-weight: bold;
+          width: 90px;
+          font-size: 15px;
+          margin-top: -17px; }
+        #timetable table .panel form input[type=checkbox] {
+          margin-right: 5px; }
+        #timetable table .panel form input:focus::placeholder,
+        #timetable table .panel form textarea:focus,
+        #timetable table .panel form input[type="text"]:focus,
+        #timetable table .panel form .uneditable-input:focus {
+          border-color: #a5e8d6;
+          outline: 0 none;
+          color: #000; }
+  #timetable th, #timetable td {
+    padding: 15px;
+    font-size: 15px; }
+  #timetable .event-one {
+    background-color: #a5e8d6; }
+  #timetable .event-two {
+    background-color: #d8f5ee; }
+  #timetable .event-three {
+    background-color: lightgreen; }
+  #timetable .event-four {
+    background-color: lightblue; }
+
+@media screen and (max-width: 320px) {
+  #main-section p {
+    font-size: 16px;
+    margin-left: 30px; }
+  #main-collumns p {
+    font-size: 12px; }
+  #timetable .panel form .form-group label {
+    font-size: 14px; }
+  #timetable .panel form .form-group input[type=submit] {
+    width: 70px;
+    font-size: 14px; } }
